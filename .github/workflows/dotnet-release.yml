@@ -45,7 +45,7 @@ jobs:
       run: dotnet test --configuration ${{ env.DOTNET_CONFIGURATION }} --no-build
 
     - name: Upload Artifacts
-      uses: actions/upload-artifact@v8
+      uses: actions/upload-artifact@v7
       with:
         name: nuget-packages
         path: artifacts/*.nupkg
